@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(135deg ,#5C8374,#092635);
+    padding: 10px;
+}
+#main {
+    background-color: #fff;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;  
+    padding: 40px 30px 70px; 
+    border-radius: 10px;
+}
+
+#main h2 {
+    color: #072541;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    justify-content: center;
+    font-size: 28px;
+    font-weight:800;
+    margin-bottom: 20px;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    background-color: #edeef0;
+    font-size: 20px;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.row> #input-box {
+    padding: 10px;
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-weight: 14px;
+}
+
+.row button {
+    border: none;
+    outline: none;
+    padding: 16px 50px; 
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+ul li {
+    color: #072541;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(https://img.freepik.com/free-vector/stroke-round-geometric-shape-vector_53876-175080.jpg?w=740&t=st=1705993095~exp=1705993695~hmac=a09c8bdb80fddb677a92e4d4d060ab79258d360ea122ec39add45935e53521c2);
+    background-position: center; 
+    background-size: cover;
+    top: 11px;
+    left: 12px;
+}
+
+ ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    background-image: url(https://img.freepik.com/free-psd/x-symbol-isolated_23-2150500369.jpg?w=740&t=st=1705993157~exp=1705993757~hmac=5c0050e4c09a8c1c1cd0d65e346529af67dae5ac0b877610ddc7f0c4e60f870f);
+    background-position: center; 
+    background-size: cover;
+}
+
+ul li span {
+    position: absolute;
+    right:0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+
+
+
